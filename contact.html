@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>iCoder</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/web-development/"
+                                    target="_blank">WebDevelopment</a></li>
+                            <li><a class="dropdown-item "
+                                    href="https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/"
+                                    target="_blank">DSA</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.geeksforgeeks.org/competitive-programming-a-complete-guide/"
+                                    target="_blank">Compitative
+                                    Programming</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.geeksforgeeks.org/15-tips-to-improve-logic-building-skills-in-programming/"
+                                    target="_blank">Logic
+                                    Building</a></li>
+                            <li><a class="dropdown-item" href="https://roadmap.sh/devops" target="_blank">Devops</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="my-2">
+                    <button class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login -->
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog form">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">LogIn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up -->
+    <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="signupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupLabel">Sign up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <label for="exampleFormControlInput1" class="form-label">Enter Username</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text">Set your password
+                        </div>
+                        <br>
+                        <label for="inputPassword5" class="form-label">Confirm Password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+
+                        <div id="passwordHelpBlock" class="form-text">Re-enter your password
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Save logIn info
+                            </label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="hed">Contact Us</h1>
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <br>
+        <form class="border border-secondary rounded p-4 ">
+            <div class="mb-3 my-4">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <select class="form-select my-4" aria-label="Default select example">
+                <option selected="">Select Query</option>
+                <option value="1">Issue while Logging In</option>
+                <option value="2">Any missinformation on the webpage</option>
+                <option value="3">Others</option>
+            </select>
+            <div class="form-floating my-4">
+                <textarea class="form-control" placeholder="Elobrate your consern" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Elobrate your consern</label>
+            </div>
+            <button type="submit" class="btn btn-primary my-4 ">Submit</button>
+        </form>
+    </div>
+
+
+    <footer class="py-5 text-center bg-dark text-light p-4">
+        <p>iCoder <a href="https://github.com/ashitoshh01" target="_blank">Ashitosh</a> by <a
+                href="https://github.com/ashitoshh01" target="_blank">@ashitoshh01</a>.</p>
+        <!-- <p class="mb-0">
+            <a href="index.html">Back to top</a>        page reloads
+        </p> -->
+        <a href="#" class="icon-link gap-1">
+            Back to top
+            <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+            </svg>
+        </a>
+    </footer>
+</body>
+
+</html>
